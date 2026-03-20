@@ -1172,12 +1172,7 @@
         Se l'IP non compare subito, clicca sul pulsante <strong>Fast Forward Time</strong> (doppia freccia avanti ▶▶) nella barra in basso. Questo accelera il tempo simulato e forza il completamento del handshake DHCP.
       </div>
 
-      <div class="img-placeholder">
-        <div class="img-icon">🖼️</div>
-        <div class="img-label">Schermata 10</div>
-        <div class="img-desc">PC-1: finestra "IP Configuration" con DHCP selezionato e indirizzo IP assegnato dinamicamente (es. 192.168.10.16)</div>
-        <div class="img-num">SCREENSHOT_10 · Inserire qui l'immagine</div>
-      </div>
+      <img src="PC_CONFIG.png">
     </section>
 
     <!-- ══ STEP 09 ══ -->
@@ -1201,12 +1196,8 @@
         PC-3 invia un broadcast <strong>DHCP Discover</strong>. Lo Switch 2 lo inonda su tutte le porte. Il router lo riceve su G0/1 e, grazie a <code>ip helper-address</code>, lo incapsula in un pacchetto unicast verso <code>192.168.10.2</code>. Il server DHCP riceve la richiesta, guarda il campo <em>giaddr</em> (<code>192.168.20.1</code>), seleziona il <code>POOL_RETE2</code> e risponde con un indirizzo della Rete 2. Il router riceve la risposta e la inoltra a PC-3.
       </div>
 
-      <div class="img-placeholder">
-        <div class="img-icon">🖼️</div>
-        <div class="img-label">Schermata 11</div>
-        <div class="img-desc">PC-3: finestra "IP Configuration" con DHCP selezionato e indirizzo IP assegnato nella subnet 192.168.20.0/24 (es. 192.168.20.16)</div>
-        <div class="img-num">SCREENSHOT_11 · Inserire qui l'immagine</div>
-      </div>
+      <img src="PC_CONFIG2.png">
+	  
     </section>
 
     <!-- ══ STEP 10 TEST ══ -->
